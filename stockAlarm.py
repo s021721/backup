@@ -11,7 +11,7 @@ import winsound
 import threading
 import easyquotation
 toAlarmCnt=3
-quotation= easyquotation.use('qq') # 新浪 ['sina'] 腾讯 ['tencent', 'qq']
+quotation= easyquotation.use('tencent') # 新浪 ['sina'] 腾讯 ['tencent', 'qq']
 
 def chinese(data):  
 	count = 0  
