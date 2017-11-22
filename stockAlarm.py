@@ -11,7 +11,7 @@ import winsound
 import threading
 import easyquotation
 toAlarmCnt=3
-quotation= easyquotation.use('tencent') # 新浪 ['sina'] 腾讯 ['tencent', 'qq']
+quotation= easyquotation.use('sina') # 新浪 ['sina'] 腾讯 ['tencent', 'qq']
 
 def chinese(data):  
 	count = 0  
@@ -89,6 +89,8 @@ def stockAlarm(stockCodeList, conditionsMap):
 				matchStr='False'
 				if matchAlart:
 					matchStr='****** True'
+				if isPlayAlarmSound:
+					matchStr='### True'
 				mat = "{:8}{:6}{:8}{:12}{:12}"
 				number = chinese(stockName)
 				newStr = '{0:{wd}}'.format(stockName,wd=10-number)
