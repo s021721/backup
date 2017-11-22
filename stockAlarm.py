@@ -20,7 +20,7 @@ def chinese(data):
 			count += 1  
 	return count  
 
-#conditionsMap like GTR(LSS) 12
+#conditionsMap like GTR(LSS) 13
 def stockAlarm(stockCodeList, conditionsMap):
 	remainAlarmCntMap={}
 	print ("**** Alarm stock list",stockCodeList)
